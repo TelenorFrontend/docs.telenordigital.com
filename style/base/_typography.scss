@@ -1,0 +1,46 @@
+@import "components/_variables/common";
+@import "components/_variables/typography";
+@import "components/typography/tn-headings-mixins";
+@import "components/typography/tn-pre";
+
+html,
+body {
+  color: $tn-color--default;
+  font: $tn-font--default;
+  line-height: $tn-line-height--docs;
+}
+
+h1 {
+  @include tn-heading($tn-font-size--h1);
+}
+
+h2 {
+  @include tn-heading($tn-font-size--h2);
+}
+
+h3 {
+  @include tn-heading($tn-font-size--h3);
+}
+
+h4 {
+  @include tn-heading($tn-font-size--h4);
+}
+
+a {
+  color: $tn-color--brand;
+  text-decoration: none;
+
+  &:hover {
+    color: rgba($tn-color--brand, .87);
+  }
+}
+
+pre {
+  @include tn-pre;
+
+  .hljs {
+    padding: 0;
+    background: none;
+    font-size: 14px;
+  }
+}

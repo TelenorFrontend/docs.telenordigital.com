@@ -1,0 +1,27 @@
+<ol class="tn-breadcrumbs">
+    {{#unless @root.index}}
+        <li class="tn-breadcrumb">
+            <a href="{{ @root.webRoot }}">Home</a>
+        </li>
+    {{/unless}}
+    {{#each breadcrumb_path}}
+      {{#if file.nav_category}}
+        {{#if file.title}}
+          <li class="tn-breadcrumb">
+                  {{~ file.title ~}}
+          </li>
+        {{/if}}
+      {{else}}
+      <li class="tn-breadcrumb">
+          {{#if file.title}}
+              <a href="{{ @root.webRoot }}{{ path }}">{{ file.title }}</a>
+          {{else}}
+              {{~ name ~}}
+          {{/if}}
+      </li>
+      {{/if}}
+    {{/each}}
+    <li class="tn-breadcrumb tn-breadcrumb--active">
+        {{~ title ~}}
+    </li>
+</ol>
