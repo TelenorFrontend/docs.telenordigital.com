@@ -5,6 +5,7 @@ lunr: true
 nav_sort: 1
 nav_groups:
 - primary
+nav_subgroup: true
 ---
 
 ## Working with transactions
