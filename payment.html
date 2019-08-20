@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="docs-html">
+<head>
+  <meta charset="utf-8">
+  <title>Payment - Documentation Scaffold</title>
+    <meta name="description" content="The Payment page shows a high level overview of CONNECT Payment">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Payment - Documentation Scaffold">
+  <meta name="twitter:description" content="The Payment page shows a high level overview of CONNECT Payment">
+  <meta name="twitter:image" content="https://telenorfrontend.github.io/docs.telenordigital.com/img/og_image.jpg">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Payment - Documentation Scaffold" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://telenorfrontend.github.io/docs.telenordigital.com/payment.html" />
+  <meta property="og:image" content="https://telenorfrontend.github.io/docs.telenordigital.com/img/og_image.jpg" />
+  <meta property="og:description" content="The Payment page shows a high level overview of CONNECT Payment" />
+  <meta property="og:site_name" content="Documentation Scaffold" />
+
+  <link rel="stylesheet" type="text/css" href="/docs.telenordigital.com/style/style.css">
+    <link rel="stylesheet" type="text/css" href="/docs.telenordigital.com/script/swagger-ui/swagger-ui-docs-preset.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link id="searchIndex" href="/docs.telenordigital.com/index.json" rel="preload" as="fetch">
+</head>
+<body class="docs-body">
+  <div id="docs-topbar" class="docs-topbar no-print">
+    <div id="docs-topbar__inner" class="docs-topbar__inner">
+      <a href="#" id="docs-menu-toggle" class="docs-topbar__icon docs-topbar__icon--menu-toggle hidden-desktop"><i class="material-icons md-64">menu</i></a>
+      <a href="#" id="docs-search-hide" class="docs-topbar__icon docs-topbar__icon--search-hide hidden-desktop"><i class="material-icons md-64">arrow_back</i></a>
+      <div class="docs-topbar__icon docs-topbar__icon--search visible-desktop"><i class="material-icons md-64">search</i></div>
+      <input id="docs-search-box" type="text" class="docs-topbar__search-box" placeholder="Search" tabindex="1" autocapitalize="none" autocomplete="off" autocorrect="off" autofocus />
+      <a href="#" id="docs-search-close" class="docs-topbar__icon docs-topbar__icon--search-close"><i class="material-icons md-64">close</i></a>
+      <a href="#" id="docs-search-show" class="docs-topbar__icon docs-topbar__icon-search-show hidden-desktop"><i class="material-icons md-64">search</i></a>
+
+    </div>
+    <div id="docs-search" class="docs-search">
+      <ul id="docs-search-results" class="docs-search-results"></ul>
+    </div>
+  </div>
+  <div id="docs-sidebar" class="docs-sidebar visible-desktop no-print">
+    <nav class="docs-nav">
+      <a class="docs-nav__logo" href="/docs.telenordigital.com/"></a>
+        <ul class="docs-nav__ul">
+                <li class="docs-nav__li docs-nav__li--group">
+                          <a href="/docs.telenordigital.com/payment.html" class="docs-nav__item">Payment</a>
+                    <ul class="docs-nav__ul">
+                            <li class="docs-nav__li docs-nav__li--subgroup">
+                                      <a href="/docs.telenordigital.com/payment/transactions.html" class="docs-nav__item">Transactions</a>
+                                <ul class="docs-nav__ul">
+                                        <li class="docs-nav__li">
+                                                  <a href="/docs.telenordigital.com/payment/transactions/create.html" class="docs-nav__item">Create transaction</a>
+                                        </li>
+                                        <li class="docs-nav__li">
+                                                  <a href="/docs.telenordigital.com/payment/transactions/view.html" class="docs-nav__item">View transaction</a>
+                                        </li>
+                                        <li class="docs-nav__li">
+                                                  <a href="/docs.telenordigital.com/payment/transactions/refund.html" class="docs-nav__item">Refund transaction</a>
+                                        </li>
+                                </ul>
+                            </li>
+                            <li class="docs-nav__li docs-nav__li--subgroup">
+                                      <a href="/docs.telenordigital.com/payment/agreements.html" class="docs-nav__item">Agreements</a>
+                                <ul class="docs-nav__ul">
+                                        <li class="docs-nav__li">
+                                                  <a href="/docs.telenordigital.com/payment/agreements/create.html" class="docs-nav__item">Create agreement</a>
+                                        </li>
+                                        <li class="docs-nav__li">
+                                                  <a href="/docs.telenordigital.com/payment/agreements/view.html" class="docs-nav__item">View agreement</a>
+                                        </li>
+                                        <li class="docs-nav__li">
+                                                  <a href="/docs.telenordigital.com/payment/agreements/stop.html" class="docs-nav__item">Stop agreement</a>
+                                        </li>
+                                </ul>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs.telenordigital.com/payment/api-documentation.html" class="docs-nav__item">Full API documentation</a>
+                            </li>
+                            <li class="docs-nav__li docs-nav__li--subgroup">
+                                      <a href="/docs.telenordigital.com/payment/faq.html" class="docs-nav__item">FAQ</a>
+                                <ul class="docs-nav__ul">
+                                        <li class="docs-nav__li">
+                                                  <a href="/docs.telenordigital.com/payment/faq/connect-id.html" class="docs-nav__item">Connect ID and Connect Payment</a>
+                                        </li>
+                                        <li class="docs-nav__li">
+                                                  <a href="/docs.telenordigital.com/payment/faq/gethelp.html" class="docs-nav__item">Get support!</a>
+                                        </li>
+                                        <li class="docs-nav__li">
+                                                  <a href="/docs.telenordigital.com/payment/faq/onboarding.html" class="docs-nav__item">Onboarding</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </ul>
+                </li>
+        </ul>
+        <div class="docs-sidebar__menuLinks hidden-desktop">
+          <hr class="docs-nav__hr" />
+          <ul class="docs-nav__ul">
+          </ul>
+        </div>
+    </nav>
+  </div>
+  <div id="barba-wrapper" class="docs-wrapper">
+    <div class="docs-content barba-container">
+      <h1>Payment</h1>
+        <ol class="docs-breadcrumbs tn-breadcrumbs visible-desktop">
+                <li class="tn-breadcrumb">
+                    <a href="/docs.telenordigital.com/">Home</a>
+                </li>
+            <li class="tn-breadcrumb tn-breadcrumb--active">Payment</li>
+        </ol>
+      <p>CONNECT Payment supports multiple sources of funds, tailored to the local markets, service provider requirements and user preferences (debit/credit cards, carrier billing, e-wallets, etc).</p>
+<p>The CONNECT Payment flow works as follows:</p>
+<ul>
+<li>The user selects the products to buy and clicks “Pay with CONNECT”.</li>
+<li>You send a prepare transaction request to our endpoint containing all the information we need to set up the transaction.</li>
+<li>We process the request and return the transaction together with a URI where the user can perform the actual purchase. The same URI can be used by you to query the state of the transaction.</li>
+<li>You redirect the user to the payment page for the transaction we have set up.</li>
+<li>The user pays using their preferred payment method. If the payment fails for any reason the user stays on the same page and gets an error message explaining what went wrong. If the user chooses to cancel the payment while being on the payment page he will be redirected to the URI you specified as the cancelRedirectUri in the prepare request.</li>
+<li>When the payment is successful the user gets redirected to the URI you specified as the successRedirectUri in the prepare request. If you are using CONNECT to manage your service access we will set all the Rights according to your specifications in the prepare request.</li>
+<li>You should check the state of the transaction by querying URI you got back in step 3, or by querying the state of the order. (API documentation)</li>
+<li>You show the user the receipt of the purchase.</li>
+<li>If the payment is set to be recurring, an equal transaction will be set up and charged using the same payment method as the first time.
+A sequence diagram of this flow can be found below.</li>
+</ul>
+
+        <a class="docs-edit-btn no-print" href="https://github.com/TelenorFrontend/docs.telenordigital.com/edit/master/docs/payment.md" target="_blank">Edit this page</a>
+    </div>
+  </div>
+    <script src="/docs.telenordigital.com/script/swagger-ui/swagger-ui-bundle.js" ></script>
+    <script src="/docs.telenordigital.com/script/swagger-ui/swagger-ui-docs-preset.js" ></script>
+  <script src="/docs.telenordigital.com/script/vendor.js" ></script>
+  <script src="/docs.telenordigital.com/script/script.js" ></script>
+</body>
+</html>
